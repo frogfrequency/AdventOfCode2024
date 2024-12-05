@@ -1,0 +1,23 @@
+{
+	"name": "AoC Devcontainer",
+ 
+	"build": {
+		"context": "..",
+		"dockerfile": "../Dockerfile"
+	},
+ 
+	"workspaceMount": "source=aoc-volume,target=/workspace,type=volume",
+ 
+	"workspaceFolder": "/workspace",
+ 
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"llvm-vs-code-extensions.vscode-clangd",
+				"ms-vscode.cmake-tools",
+				"ms-vscode.cpptools",
+				"matepek.vscode-catch2-test-adapter",
+			]
+		}
+	}
+}
